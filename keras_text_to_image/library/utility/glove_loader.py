@@ -15,8 +15,11 @@ def download_glove(data_dir_path, to_file_path):
 
         if not os.path.exists(glove_zip):
             print('glove file does not exist, downloading from internet')
-            urllib.request.urlretrieve(url='http://nlp.stanford.edu/data/glove.6B.zip', filename=glove_zip,
+            urllib.request.urlretrieve(url='https://www.kaggle.com/rtatman/glove-global-vectors-for-word-representation/download/F2Mey9xrbGGMf9kPKoou%2Fversions%2FPGEfYZ0aoq6TaCCeY8D4%2Ffiles%2Fglove.6B.100d.txt?datasetVersionNumber=1', filename=glove_zip,
                                        reporthook=reporthook)
+
+            # urllib.request.urlretrieve(url='http://nlp.stanford.edu/data/glove.6B.zip', filename=glove_zip,
+            #                            reporthook=reporthook)
 
         print('unzipping glove file')
         zip_ref = zipfile.ZipFile(glove_zip, 'r')

@@ -17,8 +17,8 @@ def main():
     txt_dir_path = current_dir + '/data/pokemon/txt'
     model_dir_path = current_dir + '/models'
 
-    img_width = 32
-    img_height = 32
+    img_width = 64
+    img_height = 64
     img_channels = 3
 
     from keras_text_to_image.library.dcgan_v3 import DCGanV3
