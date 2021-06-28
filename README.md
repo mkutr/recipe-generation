@@ -20,7 +20,7 @@ memory
 
 ### Text-to-Image using GloVe and Deep Convolution GAN
 
-Below is the [sample codes](demo/dcgan_train.py) to train the DCGan on a set of pokemon samples of pair (image, text)
+Below is the [sample codes](demo/dcgan_train.py) to train the DCGan on a set of food-photo samples paired (image, text)
 
 ```python
 import os 
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 ```
 
 Below is the [sample codes](demo/dcgan_generate.py) on how to load the trained DCGan model to generate
-3 new pokemon samples from each text description of a pokemon:
+3 new food-photo samples from each text description of a pokemon:
 
 ```python
 import os 
